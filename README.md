@@ -1,7 +1,7 @@
 # Iris Classifier App
 
 ### Overview  
-This project is a **Streamlit-based web application** that classifies iris flowers using a **Random Forest model** trained on the famous Iris dataset. Users can input flower measurements and receive a real-time prediction of the species along with the probability score for each class.
+This project is a Streamlit-based web application that classifies iris flowers using a Random Forest model. Users can input flower measurements and receive a real-time prediction of the species along with the probability score for each class.
 
 ### Features  
 * Machine Learning-powered classification** using Scikit-Learn’s Random Forest algorithm.  
