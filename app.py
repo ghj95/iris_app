@@ -5,7 +5,7 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 from interpretations import appinfo
 
-st.set_page_config(page_title="Portfolio Optimizer")
+st.set_page_config(page_title="Iris Flower Classifier", page_icon="🌷", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("## 🌷 Iris Flower Classifier App")
 col1, col2 = st.columns([0.14, 0.86], gap="small")
