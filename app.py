@@ -8,15 +8,14 @@ from interpretations import appinfo
 st.set_page_config(page_title="Iris Flower Classifier", page_icon="🌷", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("## 🌷 Iris Flower Classifier App")
-col1, col2 = st.columns([0.14, 0.86], gap="small")
-col1.write("`Created by:`")
 linkedin_url = "https://www.linkedin.com/in/gabriel-hardy-joseph/"
-col2.markdown(
-    f'<a href="{linkedin_url}" target="_blank" style="text-decoration: none; color: inherit;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="15" height="15" style="vertical-align: middle; margin-right: 10px;">`Gabriel Hardy-Joseph`</a>',
+st.markdown(
+    f'<a href="{linkedin_url}" target="_blank" style="text-decoration: none; color: inherit;">`Created by : Gabriel Hardy-Joseph`</a>',
     unsafe_allow_html=True,
 )
 
 appinfo()
+"---"
 
 st.sidebar.header("Select Parameters")
 
@@ -50,7 +49,7 @@ pred_prob = rf.predict_proba(features)[0]
 pred_class = iris.target_names[pred]
 pred_prob = pred_prob[pred]
 
-with st.expander("View Labels and Index Number"):
+with st.expander("View Labels"):
     st.write(iris.target_names)
 
 with st.expander("View Prediction"):
